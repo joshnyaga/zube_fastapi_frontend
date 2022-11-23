@@ -22,7 +22,7 @@ const WorkSpace = () => {
       setLoading(true)
      try {
       setLoading(true)
-      const res =  await axios.get(`http://127.0.0.1:8000/workspace?project_id=${id}`)
+      const res =  await axios.get(`https://e5imanlxb3uxksb3eznjacrmmq0hiwbo.lambda-url.us-east-2.on.aws/workspace?project_id=${id}`)
       setLoading(false)
       setWorkspace(res.data)
      } catch (error) {

@@ -30,7 +30,7 @@ const Projects = () => {
       setLoading(true)
      try {
       setLoading(true)
-      const res =  await axios.get("http://127.0.0.1:8000/")
+      const res =  await axios.get("https://e5imanlxb3uxksb3eznjacrmmq0hiwbo.lambda-url.us-east-2.on.aws")
       setLoading(false)
       setProjects(res.data)
      } catch (error) {

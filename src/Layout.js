@@ -11,7 +11,7 @@ const Layout = () => {
     const fetchUser = async()=>{
       try {
         setLoading(true)
-        const res = await axios.get("http://127.0.0.1:8000/user")
+        const res = await axios.get("https://e5imanlxb3uxksb3eznjacrmmq0hiwbo.lambda-url.us-east-2.on.aws/user")
         setLoading(false)
         console.log(res.data.name)
         setName(res.data.name)
